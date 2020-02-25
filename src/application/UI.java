@@ -34,9 +34,9 @@ public class UI {
 	public static void clearScreen() {
 		System.out.print("\033[H\033[2J");
 		System.out.flush();
-	}
-
-	public static ChessPosition readChessPositon(Scanner sc) {
+	}	
+	
+	public static ChessPosition readChessPosition(Scanner sc) {
 		try {
 			String s = sc.nextLine();
 			char column = s.charAt(0);
@@ -73,5 +73,4 @@ public class UI {
         }
         System.out.print(" ");
 	}
-
 }
